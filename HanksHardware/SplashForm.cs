@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace HanksHardware
 {
-    public partial class Form1 : Form
+    public partial class SplashForm : Form
     {
-        public Form1()
+        public SplashForm()
         {
             InitializeComponent();
+        }
+
+        private void SplashTimer_Tick(object sender, EventArgs e)
+        {
+            this.Hide();
+            StartForm StartForm = new StartForm();
+            StartForm.Show();
+            SplashTimer.Enabled = false;
         }
     }
 }
