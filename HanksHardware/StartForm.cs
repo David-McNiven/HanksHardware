@@ -17,11 +17,21 @@ namespace HanksHardware
             InitializeComponent();
         }
 
+        /// <summary>
+        /// event handler for exiting the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        /// <summary>
+        /// event handler to load the selection form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NewOrderButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -29,6 +39,11 @@ namespace HanksHardware
             SelectForm.Show();
         }
 
+        /// <summary>
+        /// event handler to load the product info form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SavedOrderButton_Click(object sender, EventArgs e)
         {
             this.Hide();

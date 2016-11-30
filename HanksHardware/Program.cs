@@ -8,7 +8,7 @@ namespace HanksHardware
 {
     static class Program
     {
-        public static int productID = -1;
+        public static product selectedProduct;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
