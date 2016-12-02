@@ -5,9 +5,17 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Hanks Hardware	
+/// Created By David McNiven
+/// Student	# 200330143
+/// Created On December 1st, 2016
+/// A mock computer ordering application using a database and plaintext save files
+/// </summary>
 namespace HanksHardware
 {
     public partial class OrderForm : Form
@@ -29,14 +37,12 @@ namespace HanksHardware
             ProductCostTextBox.Text = Program.selectedProduct.cost.ToString("C2");
             SalestaxTextBox.Text = (Program.selectedProduct.cost * (Decimal)0.13).ToString("C2");
             GrandTotalTextBox.Text = (Program.selectedProduct.cost * (Decimal)1.13).ToString("C2");
-            ManufacturerTextBox.Text = Program.selectedProduct.manufacturer;
-            ModelTextBox.Text = Program.selectedProduct.model;
+            ManufacturerTextBox.Text = String.Concat(Program.selectedProduct.manufacturer, " ", Program.selectedProduct.model);
             RAMTextBox.Text = String.Concat(Program.selectedProduct.RAM_size, " ", Program.selectedProduct.RAM_type);
             DisplayTextBox.Text = String.Concat(Program.selectedProduct.screensize, " ", Program.selectedProduct.displaytype, " ", Program.selectedProduct.resolution);
             CPUTextBox.Text = String.Concat(Program.selectedProduct.CPU_Class, " ", Program.selectedProduct.CPU_brand, " ", Program.selectedProduct.CPU_type, " ", Program.selectedProduct.CPU_speed, " ", Program.selectedProduct.CPU_number);
             ConditionTextBox.Text = Program.selectedProduct.condition;
-            OSTextBox.Text = Program.selectedProduct.OS;
-            PlatformTextBox.Text = Program.selectedProduct.platform;
+            PlatformTextBox.Text = String.Concat(Program.selectedProduct.OS, " ", Program.selectedProduct.platform);
             HardDriveTextBox.Text = String.Concat(Program.selectedProduct.HDD_size, " @", Program.selectedProduct.HDD_speed);
             GPUTextBox.Text = Program.selectedProduct.GPU_Type;
             DiskDriveTextBox.Text = Program.selectedProduct.optical_drive;
@@ -49,6 +55,7 @@ namespace HanksHardware
             MouseTextBox.Text = Program.selectedProduct.moust_type;
             PowerTextBox.Text = Program.selectedProduct.power;
             WebCamTextBox.Text = Program.selectedProduct.webcam;
+            ProductPictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(Regex.Replace(Program.selectedProduct.manufacturer, @"\s+", ""));
         }
 
         /// <summary>

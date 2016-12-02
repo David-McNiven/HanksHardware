@@ -8,11 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Hanks Hardware	
+/// Created By David McNiven
+/// Student	# 200330143
+/// Created On December 1st, 2016
+/// A mock computer ordering application using a database and plaintext save files
+/// </summary>
 namespace HanksHardware
 {
     public partial class SelectForm : Form
     {
-        private int _selectedRow;
         public SelectForm()
         {
             InitializeComponent();
@@ -30,9 +36,7 @@ namespace HanksHardware
             if (Program.selectedProduct != null)
             {
                 NextButton.Enabled = true;
-                _selectedRow = Program.selectedProduct.productID;
-                SelectDataGridView.CurrentCell = SelectDataGridView.Rows[_selectedRow].Cells[0];
-                DisplaySelected();
+                findRow();
             }
             else
             {
@@ -49,8 +53,6 @@ namespace HanksHardware
         private void SelectDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0) {
-                _selectedRow = e.RowIndex;
-                SelectDataGridView.Rows[_selectedRow].Selected = true;
                 DisplaySelected();
                 NextButton.Enabled = true;
             }
@@ -61,9 +63,9 @@ namespace HanksHardware
         /// </summary>
         private void DisplaySelected()
         {
-            SelectedTextBox.Text = String.Concat(SelectDataGridView.Rows[_selectedRow].Cells["manufacturerColumn"].Value.ToString(),
-                " ", SelectDataGridView.Rows[_selectedRow].Cells["modelColumn"].Value.ToString(),
-                " Priced at: ", SelectDataGridView.Rows[_selectedRow].Cells["costColumn"].FormattedValue.ToString());
+            SelectedTextBox.Text = String.Concat(SelectDataGridView.CurrentRow.Cells["manufacturerColumn"].Value.ToString(),
+                " ", SelectDataGridView.CurrentRow.Cells["modelColumn"].Value.ToString(),
+                " Priced at: ", SelectDataGridView.CurrentRow.Cells["costColumn"].FormattedValue.ToString());
         }
 
         /// <summary>
@@ -104,6 +106,41 @@ namespace HanksHardware
             ProductInfoForm ProductInfoForm = new ProductInfoForm();
             ProductInfoForm.previousForm = this;
             ProductInfoForm.Show();
+        }
+
+        /// <summary>
+        /// event handler for returning to this form from the product info form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SelectForm_Activated(object sender, EventArgs e)
+        {
+            if (Program.selectedProduct != null)
+            {
+                NextButton.Enabled = true;
+                findRow();
+            }
+            else
+            {
+                NextButton.Enabled = false;
+                SelectDataGridView.ClearSelection();
+            }
+        }
+
+        /// <summary>
+        /// finds the row of the previously selected product
+        /// </summary>
+        private void findRow()
+        {
+            SelectDataGridView.ClearSelection();
+            foreach (DataGridViewRow row in SelectDataGridView.Rows)
+            {
+                if (row.Cells["productIDColumn"].Value.ToString().Equals(Program.selectedProduct.productID.ToString()))
+                {
+                    row.Cells["costColumn"].Selected = true;
+                }
+            }
+            DisplaySelected();
         }
     }
 }

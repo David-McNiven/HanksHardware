@@ -9,6 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+/// <summary>
+/// Hanks Hardware	
+/// Created By David McNiven
+/// Student	# 200330143
+/// Created On December 1st, 2016
+/// A mock computer ordering application using a database and plaintext save files
+/// </summary>
 namespace HanksHardware
 {
     public partial class ProductInfoForm : Form
@@ -40,6 +47,7 @@ namespace HanksHardware
             {
                 NextButton.Enabled = false;
             }
+            this.Activate();
         }
 
         /// <summary>
@@ -50,6 +58,7 @@ namespace HanksHardware
         private void SelectAnotherProductButton_Click(object sender, EventArgs e)
         {
             this.Hide();
+            previousForm.Activate();
             previousForm.Show();
         }
 
@@ -197,7 +206,6 @@ namespace HanksHardware
                         {
                             property.SetValue(Program.selectedProduct, reader.ReadLine());
                         }
-                        
                     }
                     reader.Close();
                     PopulateText();
@@ -209,6 +217,11 @@ namespace HanksHardware
                     throw;
                 }
             }
+        }
+
+        private void RAMTypeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

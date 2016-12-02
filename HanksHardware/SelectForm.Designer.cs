@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SelectLabel = new System.Windows.Forms.Label();
             this.SelectDataGridView = new System.Windows.Forms.DataGridView();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -133,7 +133,7 @@
             this.SelectDataGridView.RowHeadersVisible = false;
             this.SelectDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.SelectDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SelectDataGridView.Size = new System.Drawing.Size(621, 225);
+            this.SelectDataGridView.Size = new System.Drawing.Size(798, 350);
             this.SelectDataGridView.TabIndex = 1;
             this.SelectDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SelectDataGridView_CellContentClick);
             this.SelectDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SelectDataGridView_CellContentClick);
@@ -151,7 +151,7 @@
             // SelectedLabel
             // 
             this.SelectedLabel.AutoSize = true;
-            this.SelectedLabel.Location = new System.Drawing.Point(13, 265);
+            this.SelectedLabel.Location = new System.Drawing.Point(12, 391);
             this.SelectedLabel.Name = "SelectedLabel";
             this.SelectedLabel.Size = new System.Drawing.Size(91, 13);
             this.SelectedLabel.TabIndex = 2;
@@ -159,15 +159,15 @@
             // 
             // SelectedTextBox
             // 
-            this.SelectedTextBox.Location = new System.Drawing.Point(110, 262);
+            this.SelectedTextBox.Location = new System.Drawing.Point(109, 388);
             this.SelectedTextBox.Name = "SelectedTextBox";
             this.SelectedTextBox.ReadOnly = true;
-            this.SelectedTextBox.Size = new System.Drawing.Size(365, 20);
+            this.SelectedTextBox.Size = new System.Drawing.Size(514, 20);
             this.SelectedTextBox.TabIndex = 3;
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(481, 260);
+            this.ExitButton.Location = new System.Drawing.Point(647, 385);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(75, 23);
             this.ExitButton.TabIndex = 4;
@@ -177,7 +177,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(562, 260);
+            this.NextButton.Location = new System.Drawing.Point(739, 385);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(75, 23);
             this.NextButton.TabIndex = 5;
@@ -201,9 +201,9 @@
             // costColumn
             // 
             this.costColumn.DataPropertyName = "cost";
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.costColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Format = "C2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.costColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.costColumn.HeaderText = "cost";
             this.costColumn.Name = "costColumn";
             this.costColumn.ReadOnly = true;
@@ -445,7 +445,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 295);
+            this.ClientSize = new System.Drawing.Size(826, 413);
             this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.ExitButton);
@@ -456,6 +456,7 @@
             this.Name = "SelectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select A Product";
+            this.Activated += new System.EventHandler(this.SelectForm_Activated);
             this.Load += new System.EventHandler(this.SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SelectDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();

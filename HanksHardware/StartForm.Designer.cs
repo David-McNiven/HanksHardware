@@ -67,6 +67,7 @@
             // 
             // HanksLogoPictureBox
             // 
+            this.HanksLogoPictureBox.Image = global::HanksHardware.Properties.Resources.Splash;
             this.HanksLogoPictureBox.Location = new System.Drawing.Point(12, 12);
             this.HanksLogoPictureBox.Name = "HanksLogoPictureBox";
             this.HanksLogoPictureBox.Size = new System.Drawing.Size(261, 177);

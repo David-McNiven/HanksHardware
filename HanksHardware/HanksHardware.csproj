@@ -125,6 +125,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
@@ -153,6 +154,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CybertronPC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gateway.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iBUYPOWER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lenovo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toshiba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

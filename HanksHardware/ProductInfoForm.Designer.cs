@@ -111,7 +111,7 @@
             // 
             // SelectAnotherProductButton
             // 
-            this.SelectAnotherProductButton.Location = new System.Drawing.Point(168, 361);
+            this.SelectAnotherProductButton.Location = new System.Drawing.Point(707, 317);
             this.SelectAnotherProductButton.Name = "SelectAnotherProductButton";
             this.SelectAnotherProductButton.Size = new System.Drawing.Size(132, 23);
             this.SelectAnotherProductButton.TabIndex = 0;
@@ -121,7 +121,7 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(12, 361);
+            this.ExitButton.Location = new System.Drawing.Point(685, 350);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(75, 23);
             this.ExitButton.TabIndex = 1;
@@ -131,7 +131,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(370, 361);
+            this.NextButton.Location = new System.Drawing.Point(784, 350);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(75, 23);
             this.NextButton.TabIndex = 2;
@@ -146,7 +146,7 @@
             this.editToolStripMenuItem});
             this.ProductInfoMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.ProductInfoMenuStrip.Name = "ProductInfoMenuStrip";
-            this.ProductInfoMenuStrip.Size = new System.Drawing.Size(457, 24);
+            this.ProductInfoMenuStrip.Size = new System.Drawing.Size(885, 24);
             this.ProductInfoMenuStrip.TabIndex = 3;
             this.ProductInfoMenuStrip.Text = "ProductInfoMenuStrip";
             // 
@@ -163,21 +163,21 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
             // 
@@ -229,9 +229,9 @@
             this.RAMGroupBox.Controls.Add(this.RAMSizeTextBox);
             this.RAMGroupBox.Controls.Add(this.RAMTypeLabel);
             this.RAMGroupBox.Controls.Add(this.RAMSizeLabel);
-            this.RAMGroupBox.Location = new System.Drawing.Point(168, 268);
+            this.RAMGroupBox.Location = new System.Drawing.Point(523, 306);
             this.RAMGroupBox.Name = "RAMGroupBox";
-            this.RAMGroupBox.Size = new System.Drawing.Size(128, 87);
+            this.RAMGroupBox.Size = new System.Drawing.Size(130, 75);
             this.RAMGroupBox.TabIndex = 7;
             this.RAMGroupBox.TabStop = false;
             this.RAMGroupBox.Text = "RAM";
@@ -239,16 +239,17 @@
             // RAMTypeTextBox
             // 
             this.RAMTypeTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.RAMTypeTextBox.Location = new System.Drawing.Point(53, 44);
+            this.RAMTypeTextBox.Location = new System.Drawing.Point(55, 44);
             this.RAMTypeTextBox.Name = "RAMTypeTextBox";
             this.RAMTypeTextBox.ReadOnly = true;
             this.RAMTypeTextBox.Size = new System.Drawing.Size(69, 20);
             this.RAMTypeTextBox.TabIndex = 3;
+            this.RAMTypeTextBox.TextChanged += new System.EventHandler(this.RAMTypeTextBox_TextChanged);
             // 
             // RAMSizeTextBox
             // 
             this.RAMSizeTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.RAMSizeTextBox.Location = new System.Drawing.Point(53, 18);
+            this.RAMSizeTextBox.Location = new System.Drawing.Point(55, 17);
             this.RAMSizeTextBox.Name = "RAMSizeTextBox";
             this.RAMSizeTextBox.ReadOnly = true;
             this.RAMSizeTextBox.Size = new System.Drawing.Size(69, 20);
@@ -280,9 +281,9 @@
             this.DisplayGroupBox.Controls.Add(this.DisplayResolutionLabel);
             this.DisplayGroupBox.Controls.Add(this.DisplaySizeLabel);
             this.DisplayGroupBox.Controls.Add(this.DisplayTypeLabel);
-            this.DisplayGroupBox.Location = new System.Drawing.Point(315, 250);
+            this.DisplayGroupBox.Location = new System.Drawing.Point(12, 306);
             this.DisplayGroupBox.Name = "DisplayGroupBox";
-            this.DisplayGroupBox.Size = new System.Drawing.Size(141, 105);
+            this.DisplayGroupBox.Size = new System.Drawing.Size(369, 75);
             this.DisplayGroupBox.TabIndex = 8;
             this.DisplayGroupBox.TabStop = false;
             this.DisplayGroupBox.Text = "Display";
@@ -290,34 +291,34 @@
             // DisplayResolutionTextBox
             // 
             this.DisplayResolutionTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.DisplayResolutionTextBox.Location = new System.Drawing.Point(70, 71);
+            this.DisplayResolutionTextBox.Location = new System.Drawing.Point(78, 40);
             this.DisplayResolutionTextBox.Name = "DisplayResolutionTextBox";
             this.DisplayResolutionTextBox.ReadOnly = true;
-            this.DisplayResolutionTextBox.Size = new System.Drawing.Size(65, 20);
+            this.DisplayResolutionTextBox.Size = new System.Drawing.Size(82, 20);
             this.DisplayResolutionTextBox.TabIndex = 5;
             // 
             // DisplayTypeTextBox
             // 
             this.DisplayTypeTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.DisplayTypeTextBox.Location = new System.Drawing.Point(70, 45);
+            this.DisplayTypeTextBox.Location = new System.Drawing.Point(78, 14);
             this.DisplayTypeTextBox.Name = "DisplayTypeTextBox";
             this.DisplayTypeTextBox.ReadOnly = true;
-            this.DisplayTypeTextBox.Size = new System.Drawing.Size(65, 20);
+            this.DisplayTypeTextBox.Size = new System.Drawing.Size(280, 20);
             this.DisplayTypeTextBox.TabIndex = 4;
             // 
             // DisplaySizeTextBox
             // 
             this.DisplaySizeTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.DisplaySizeTextBox.Location = new System.Drawing.Point(70, 19);
+            this.DisplaySizeTextBox.Location = new System.Drawing.Point(248, 40);
             this.DisplaySizeTextBox.Name = "DisplaySizeTextBox";
             this.DisplaySizeTextBox.ReadOnly = true;
-            this.DisplaySizeTextBox.Size = new System.Drawing.Size(65, 20);
+            this.DisplaySizeTextBox.Size = new System.Drawing.Size(110, 20);
             this.DisplaySizeTextBox.TabIndex = 3;
             // 
             // DisplayResolutionLabel
             // 
             this.DisplayResolutionLabel.AutoSize = true;
-            this.DisplayResolutionLabel.Location = new System.Drawing.Point(6, 74);
+            this.DisplayResolutionLabel.Location = new System.Drawing.Point(7, 43);
             this.DisplayResolutionLabel.Name = "DisplayResolutionLabel";
             this.DisplayResolutionLabel.Size = new System.Drawing.Size(57, 13);
             this.DisplayResolutionLabel.TabIndex = 2;
@@ -326,7 +327,7 @@
             // DisplaySizeLabel
             // 
             this.DisplaySizeLabel.AutoSize = true;
-            this.DisplaySizeLabel.Location = new System.Drawing.Point(6, 20);
+            this.DisplaySizeLabel.Location = new System.Drawing.Point(176, 43);
             this.DisplaySizeLabel.Name = "DisplaySizeLabel";
             this.DisplaySizeLabel.Size = new System.Drawing.Size(64, 13);
             this.DisplaySizeLabel.TabIndex = 1;
@@ -335,7 +336,7 @@
             // DisplayTypeLabel
             // 
             this.DisplayTypeLabel.AutoSize = true;
-            this.DisplayTypeLabel.Location = new System.Drawing.Point(6, 46);
+            this.DisplayTypeLabel.Location = new System.Drawing.Point(12, 17);
             this.DisplayTypeLabel.Name = "DisplayTypeLabel";
             this.DisplayTypeLabel.Size = new System.Drawing.Size(31, 13);
             this.DisplayTypeLabel.TabIndex = 0;
@@ -361,7 +362,7 @@
             this.GeneralGroupBox.Controls.Add(this.ModelLabel);
             this.GeneralGroupBox.Location = new System.Drawing.Point(12, 34);
             this.GeneralGroupBox.Name = "GeneralGroupBox";
-            this.GeneralGroupBox.Size = new System.Drawing.Size(150, 230);
+            this.GeneralGroupBox.Size = new System.Drawing.Size(728, 125);
             this.GeneralGroupBox.TabIndex = 9;
             this.GeneralGroupBox.TabStop = false;
             this.GeneralGroupBox.Text = "General Information";
@@ -369,16 +370,16 @@
             // WeightTextBox
             // 
             this.WeightTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.WeightTextBox.Location = new System.Drawing.Point(78, 196);
+            this.WeightTextBox.Location = new System.Drawing.Point(444, 95);
             this.WeightTextBox.Name = "WeightTextBox";
             this.WeightTextBox.ReadOnly = true;
-            this.WeightTextBox.Size = new System.Drawing.Size(62, 20);
+            this.WeightTextBox.Size = new System.Drawing.Size(277, 20);
             this.WeightTextBox.TabIndex = 19;
             // 
             // WeightLabel
             // 
             this.WeightLabel.AutoSize = true;
-            this.WeightLabel.Location = new System.Drawing.Point(7, 196);
+            this.WeightLabel.Location = new System.Drawing.Point(373, 95);
             this.WeightLabel.Name = "WeightLabel";
             this.WeightLabel.Size = new System.Drawing.Size(41, 13);
             this.WeightLabel.TabIndex = 18;
@@ -387,16 +388,16 @@
             // PlatformTextBox
             // 
             this.PlatformTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.PlatformTextBox.Location = new System.Drawing.Point(78, 170);
+            this.PlatformTextBox.Location = new System.Drawing.Point(444, 69);
             this.PlatformTextBox.Name = "PlatformTextBox";
             this.PlatformTextBox.ReadOnly = true;
-            this.PlatformTextBox.Size = new System.Drawing.Size(62, 20);
+            this.PlatformTextBox.Size = new System.Drawing.Size(277, 20);
             this.PlatformTextBox.TabIndex = 17;
             // 
             // PlatformLabel
             // 
             this.PlatformLabel.AutoSize = true;
-            this.PlatformLabel.Location = new System.Drawing.Point(7, 173);
+            this.PlatformLabel.Location = new System.Drawing.Point(373, 72);
             this.PlatformLabel.Name = "PlatformLabel";
             this.PlatformLabel.Size = new System.Drawing.Size(45, 13);
             this.PlatformLabel.TabIndex = 16;
@@ -405,19 +406,19 @@
             // OSTextBox
             // 
             this.OSTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.OSTextBox.Location = new System.Drawing.Point(78, 143);
+            this.OSTextBox.Location = new System.Drawing.Point(444, 42);
             this.OSTextBox.Name = "OSTextBox";
             this.OSTextBox.ReadOnly = true;
-            this.OSTextBox.Size = new System.Drawing.Size(62, 20);
+            this.OSTextBox.Size = new System.Drawing.Size(277, 20);
             this.OSTextBox.TabIndex = 15;
             // 
             // ConditionTextBox
             // 
             this.ConditionTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.ConditionTextBox.Location = new System.Drawing.Point(78, 117);
+            this.ConditionTextBox.Location = new System.Drawing.Point(444, 16);
             this.ConditionTextBox.Name = "ConditionTextBox";
             this.ConditionTextBox.ReadOnly = true;
-            this.ConditionTextBox.Size = new System.Drawing.Size(62, 20);
+            this.ConditionTextBox.Size = new System.Drawing.Size(277, 20);
             this.ConditionTextBox.TabIndex = 14;
             // 
             // DimensionsTextBox
@@ -426,7 +427,7 @@
             this.DimensionsTextBox.Location = new System.Drawing.Point(78, 94);
             this.DimensionsTextBox.Name = "DimensionsTextBox";
             this.DimensionsTextBox.ReadOnly = true;
-            this.DimensionsTextBox.Size = new System.Drawing.Size(62, 20);
+            this.DimensionsTextBox.Size = new System.Drawing.Size(280, 20);
             this.DimensionsTextBox.TabIndex = 13;
             // 
             // ModelTextBox
@@ -435,7 +436,7 @@
             this.ModelTextBox.Location = new System.Drawing.Point(78, 68);
             this.ModelTextBox.Name = "ModelTextBox";
             this.ModelTextBox.ReadOnly = true;
-            this.ModelTextBox.Size = new System.Drawing.Size(62, 20);
+            this.ModelTextBox.Size = new System.Drawing.Size(280, 20);
             this.ModelTextBox.TabIndex = 12;
             // 
             // ManufacturerTextBox
@@ -444,7 +445,7 @@
             this.ManufacturerTextBox.Location = new System.Drawing.Point(78, 46);
             this.ManufacturerTextBox.Name = "ManufacturerTextBox";
             this.ManufacturerTextBox.ReadOnly = true;
-            this.ManufacturerTextBox.Size = new System.Drawing.Size(62, 20);
+            this.ManufacturerTextBox.Size = new System.Drawing.Size(280, 20);
             this.ManufacturerTextBox.TabIndex = 11;
             // 
             // CostTextBox
@@ -453,13 +454,13 @@
             this.CostTextBox.Location = new System.Drawing.Point(78, 20);
             this.CostTextBox.Name = "CostTextBox";
             this.CostTextBox.ReadOnly = true;
-            this.CostTextBox.Size = new System.Drawing.Size(62, 20);
+            this.CostTextBox.Size = new System.Drawing.Size(280, 20);
             this.CostTextBox.TabIndex = 10;
             // 
             // OSLabel
             // 
             this.OSLabel.AutoSize = true;
-            this.OSLabel.Location = new System.Drawing.Point(7, 142);
+            this.OSLabel.Location = new System.Drawing.Point(373, 41);
             this.OSLabel.Name = "OSLabel";
             this.OSLabel.Size = new System.Drawing.Size(22, 13);
             this.OSLabel.TabIndex = 9;
@@ -468,7 +469,7 @@
             // ConditionLabel
             // 
             this.ConditionLabel.AutoSize = true;
-            this.ConditionLabel.Location = new System.Drawing.Point(7, 117);
+            this.ConditionLabel.Location = new System.Drawing.Point(373, 16);
             this.ConditionLabel.Name = "ConditionLabel";
             this.ConditionLabel.Size = new System.Drawing.Size(51, 13);
             this.ConditionLabel.TabIndex = 8;
@@ -495,7 +496,7 @@
             this.CPUGroupBox.Controls.Add(this.CPUTypeLabel);
             this.CPUGroupBox.Controls.Add(this.CPUBrandLabel);
             this.CPUGroupBox.Controls.Add(this.CPUClassLabel);
-            this.CPUGroupBox.Location = new System.Drawing.Point(315, 34);
+            this.CPUGroupBox.Location = new System.Drawing.Point(746, 34);
             this.CPUGroupBox.Name = "CPUGroupBox";
             this.CPUGroupBox.Size = new System.Drawing.Size(130, 157);
             this.CPUGroupBox.TabIndex = 10;
@@ -598,9 +599,9 @@
             this.HardDriveGroupBox.Controls.Add(this.HardDriveSizeTextBox);
             this.HardDriveGroupBox.Controls.Add(this.HardDriveSpeedLabel);
             this.HardDriveGroupBox.Controls.Add(this.HardDriveSizeLabel);
-            this.HardDriveGroupBox.Location = new System.Drawing.Point(12, 273);
+            this.HardDriveGroupBox.Location = new System.Drawing.Point(387, 306);
             this.HardDriveGroupBox.Name = "HardDriveGroupBox";
-            this.HardDriveGroupBox.Size = new System.Drawing.Size(150, 82);
+            this.HardDriveGroupBox.Size = new System.Drawing.Size(130, 75);
             this.HardDriveGroupBox.TabIndex = 11;
             this.HardDriveGroupBox.TabStop = false;
             this.HardDriveGroupBox.Text = "Hard Drive";
@@ -608,25 +609,25 @@
             // HardDriveSpeedTextBox
             // 
             this.HardDriveSpeedTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.HardDriveSpeedTextBox.Location = new System.Drawing.Point(78, 47);
+            this.HardDriveSpeedTextBox.Location = new System.Drawing.Point(55, 43);
             this.HardDriveSpeedTextBox.Name = "HardDriveSpeedTextBox";
             this.HardDriveSpeedTextBox.ReadOnly = true;
-            this.HardDriveSpeedTextBox.Size = new System.Drawing.Size(62, 20);
+            this.HardDriveSpeedTextBox.Size = new System.Drawing.Size(69, 20);
             this.HardDriveSpeedTextBox.TabIndex = 3;
             // 
             // HardDriveSizeTextBox
             // 
             this.HardDriveSizeTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.HardDriveSizeTextBox.Location = new System.Drawing.Point(78, 21);
+            this.HardDriveSizeTextBox.Location = new System.Drawing.Point(55, 19);
             this.HardDriveSizeTextBox.Name = "HardDriveSizeTextBox";
             this.HardDriveSizeTextBox.ReadOnly = true;
-            this.HardDriveSizeTextBox.Size = new System.Drawing.Size(62, 20);
+            this.HardDriveSizeTextBox.Size = new System.Drawing.Size(69, 20);
             this.HardDriveSizeTextBox.TabIndex = 2;
             // 
             // HardDriveSpeedLabel
             // 
             this.HardDriveSpeedLabel.AutoSize = true;
-            this.HardDriveSpeedLabel.Location = new System.Drawing.Point(7, 50);
+            this.HardDriveSpeedLabel.Location = new System.Drawing.Point(6, 46);
             this.HardDriveSpeedLabel.Name = "HardDriveSpeedLabel";
             this.HardDriveSpeedLabel.Size = new System.Drawing.Size(38, 13);
             this.HardDriveSpeedLabel.TabIndex = 1;
@@ -635,7 +636,7 @@
             // HardDriveSizeLabel
             // 
             this.HardDriveSizeLabel.AutoSize = true;
-            this.HardDriveSizeLabel.Location = new System.Drawing.Point(7, 24);
+            this.HardDriveSizeLabel.Location = new System.Drawing.Point(6, 21);
             this.HardDriveSizeLabel.Name = "HardDriveSizeLabel";
             this.HardDriveSizeLabel.Size = new System.Drawing.Size(27, 13);
             this.HardDriveSizeLabel.TabIndex = 0;
@@ -659,9 +660,9 @@
             this.IOGroupBox.Controls.Add(this.WIFILabel);
             this.IOGroupBox.Controls.Add(this.AudioLabel);
             this.IOGroupBox.Controls.Add(this.DiskDriveLabel);
-            this.IOGroupBox.Location = new System.Drawing.Point(168, 34);
+            this.IOGroupBox.Location = new System.Drawing.Point(12, 165);
             this.IOGroupBox.Name = "IOGroupBox";
-            this.IOGroupBox.Size = new System.Drawing.Size(141, 210);
+            this.IOGroupBox.Size = new System.Drawing.Size(728, 135);
             this.IOGroupBox.TabIndex = 12;
             this.IOGroupBox.TabStop = false;
             this.IOGroupBox.Text = "I/O";
@@ -669,16 +670,16 @@
             // LANTextBox
             // 
             this.LANTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.LANTextBox.Location = new System.Drawing.Point(70, 190);
+            this.LANTextBox.Location = new System.Drawing.Point(437, 72);
             this.LANTextBox.Name = "LANTextBox";
             this.LANTextBox.ReadOnly = true;
-            this.LANTextBox.Size = new System.Drawing.Size(65, 20);
+            this.LANTextBox.Size = new System.Drawing.Size(280, 20);
             this.LANTextBox.TabIndex = 15;
             // 
             // LANLabel
             // 
             this.LANLabel.AutoSize = true;
-            this.LANLabel.Location = new System.Drawing.Point(12, 192);
+            this.LANLabel.Location = new System.Drawing.Point(379, 74);
             this.LANLabel.Name = "LANLabel";
             this.LANLabel.Size = new System.Drawing.Size(28, 13);
             this.LANLabel.TabIndex = 14;
@@ -687,16 +688,16 @@
             // GPUTypeTextBox
             // 
             this.GPUTypeTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.GPUTypeTextBox.Location = new System.Drawing.Point(70, 173);
+            this.GPUTypeTextBox.Location = new System.Drawing.Point(437, 43);
             this.GPUTypeTextBox.Name = "GPUTypeTextBox";
             this.GPUTypeTextBox.ReadOnly = true;
-            this.GPUTypeTextBox.Size = new System.Drawing.Size(65, 20);
+            this.GPUTypeTextBox.Size = new System.Drawing.Size(280, 20);
             this.GPUTypeTextBox.TabIndex = 13;
             // 
             // GPUTypeLabel
             // 
             this.GPUTypeLabel.AutoSize = true;
-            this.GPUTypeLabel.Location = new System.Drawing.Point(9, 175);
+            this.GPUTypeLabel.Location = new System.Drawing.Point(373, 45);
             this.GPUTypeLabel.Name = "GPUTypeLabel";
             this.GPUTypeLabel.Size = new System.Drawing.Size(30, 13);
             this.GPUTypeLabel.TabIndex = 12;
@@ -705,61 +706,61 @@
             // WebCamTextBox
             // 
             this.WebCamTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.WebCamTextBox.Location = new System.Drawing.Point(70, 141);
+            this.WebCamTextBox.Location = new System.Drawing.Point(437, 98);
             this.WebCamTextBox.Name = "WebCamTextBox";
             this.WebCamTextBox.ReadOnly = true;
-            this.WebCamTextBox.Size = new System.Drawing.Size(65, 20);
+            this.WebCamTextBox.Size = new System.Drawing.Size(280, 20);
             this.WebCamTextBox.TabIndex = 11;
             // 
             // PowerTextBox
             // 
             this.PowerTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.PowerTextBox.Location = new System.Drawing.Point(70, 117);
+            this.PowerTextBox.Location = new System.Drawing.Point(437, 16);
             this.PowerTextBox.Name = "PowerTextBox";
             this.PowerTextBox.ReadOnly = true;
-            this.PowerTextBox.Size = new System.Drawing.Size(65, 20);
+            this.PowerTextBox.Size = new System.Drawing.Size(280, 20);
             this.PowerTextBox.TabIndex = 10;
             // 
             // MouseTextBox
             // 
             this.MouseTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.MouseTextBox.Location = new System.Drawing.Point(70, 91);
+            this.MouseTextBox.Location = new System.Drawing.Point(78, 91);
             this.MouseTextBox.Name = "MouseTextBox";
             this.MouseTextBox.ReadOnly = true;
-            this.MouseTextBox.Size = new System.Drawing.Size(65, 20);
+            this.MouseTextBox.Size = new System.Drawing.Size(280, 20);
             this.MouseTextBox.TabIndex = 9;
             // 
             // WIFITextBox
             // 
             this.WIFITextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.WIFITextBox.Location = new System.Drawing.Point(70, 65);
+            this.WIFITextBox.Location = new System.Drawing.Point(78, 67);
             this.WIFITextBox.Name = "WIFITextBox";
             this.WIFITextBox.ReadOnly = true;
-            this.WIFITextBox.Size = new System.Drawing.Size(65, 20);
+            this.WIFITextBox.Size = new System.Drawing.Size(280, 20);
             this.WIFITextBox.TabIndex = 8;
             // 
             // AudioTextBox
             // 
             this.AudioTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.AudioTextBox.Location = new System.Drawing.Point(70, 43);
+            this.AudioTextBox.Location = new System.Drawing.Point(78, 43);
             this.AudioTextBox.Name = "AudioTextBox";
             this.AudioTextBox.ReadOnly = true;
-            this.AudioTextBox.Size = new System.Drawing.Size(65, 20);
+            this.AudioTextBox.Size = new System.Drawing.Size(280, 20);
             this.AudioTextBox.TabIndex = 7;
             // 
             // DiskDriveTextBox
             // 
             this.DiskDriveTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.DiskDriveTextBox.Location = new System.Drawing.Point(70, 19);
+            this.DiskDriveTextBox.Location = new System.Drawing.Point(78, 19);
             this.DiskDriveTextBox.Name = "DiskDriveTextBox";
             this.DiskDriveTextBox.ReadOnly = true;
-            this.DiskDriveTextBox.Size = new System.Drawing.Size(65, 20);
+            this.DiskDriveTextBox.Size = new System.Drawing.Size(280, 20);
             this.DiskDriveTextBox.TabIndex = 6;
             // 
             // WebcamLabel
             // 
             this.WebcamLabel.AutoSize = true;
-            this.WebcamLabel.Location = new System.Drawing.Point(6, 144);
+            this.WebcamLabel.Location = new System.Drawing.Point(373, 101);
             this.WebcamLabel.Name = "WebcamLabel";
             this.WebcamLabel.Size = new System.Drawing.Size(51, 13);
             this.WebcamLabel.TabIndex = 5;
@@ -768,7 +769,7 @@
             // PowerLabel
             // 
             this.PowerLabel.AutoSize = true;
-            this.PowerLabel.Location = new System.Drawing.Point(6, 120);
+            this.PowerLabel.Location = new System.Drawing.Point(373, 19);
             this.PowerLabel.Name = "PowerLabel";
             this.PowerLabel.Size = new System.Drawing.Size(37, 13);
             this.PowerLabel.TabIndex = 4;
@@ -814,7 +815,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 398);
+            this.ClientSize = new System.Drawing.Size(885, 394);
             this.ControlBox = false;
             this.Controls.Add(this.IOGroupBox);
             this.Controls.Add(this.HardDriveGroupBox);

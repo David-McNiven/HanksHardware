@@ -7,6 +7,13 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Hanks Hardware	
+/// Created By David McNiven
+/// Student	# 200330143
+/// Created On December 1st, 2016
+/// A mock computer ordering application using a database and plaintext save files
+/// </summary>
 namespace HanksHardware
 {
     partial class OrderAboutBox : Form
